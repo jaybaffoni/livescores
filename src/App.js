@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   getScores(){
-    axios.get('http://www.nfl.com/liveupdate/scores/scores.json')
+    axios.get('https://livescores-api.herokuapp.com/')
       .then((response) => {
         this.setState({games: response.data});
       })
